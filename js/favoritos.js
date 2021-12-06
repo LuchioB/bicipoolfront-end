@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: "http://localhost:8080/api/Favorite/all",
+        url: "http://144.22.244.132:8080/api/Favorites/all",
         type: "GET",
         cache: false,
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
         let user = $.trim($("#user-input").val());
 
         $.ajax({
-            url: "http://localhost:8080/api/user/new",
+            url: "http://144.22.244.132:8080/api/user/new",
             type: "POST",
             data: JSON.stringify({
                 bike: bike,
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
 function deleteFavorite(idFavorite) {
     $.ajax({
-        url: `http://localhost:8080/api/Favorite/${idFavorite}`,
+        url: `http://144.22.244.132:8080/api/Favorites/${idFavorite}`,
         type: "DELETE",
         success: function(){
             alert("Se ha eliminado el favorito")
@@ -71,7 +71,7 @@ function deleteFavorite(idFavorite) {
 
 function updateFavorite(idFavorite) {
     $("#btn-upd-client").click(function () {
-        let urlServicio = "http://localhost:8080/api/Favorite/update";
+        let urlServicio = "http://144.22.244.132:8080/api/Favorites/update";
         let bike = $.trim($("#bike-input").val());
         let user = $.trim($("#user-input").val());
             $.ajax({

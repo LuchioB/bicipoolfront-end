@@ -11,7 +11,7 @@ if (email == "" || password == "") {
     return
 } else {
     $.ajax({
-        url: "http://localhost:8080/api/Registro/" + email + "/" + password,
+        url: "http://144.22.244.132:8080/api/Registro/" + email + "/" + password,
         type: "GET",
         dataType: "json",
         success: function (respuesta) {
