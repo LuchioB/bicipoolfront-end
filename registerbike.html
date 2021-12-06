@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rgistro de usuarios nuevos</title>
+
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4"  img src="../images/logo.png" alt="" width="112" height="100">
+      <h2>Registro de bicicletas</h2>
+      <p class="lead">Registra tu bicicleta aquí para que la comunidad empiece esta avetura. Porfavor, no olvides diligenciar todos los campos.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+      
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Bicipool(bicicletas)</h4>
+        <form class="needs-validation" novalidate>
+          
+            <div class="col-sm-6">
+              <label for="mark" class="form-label">Mark</label>
+              <input type="text" class="form-control" id="mark" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid mark is required.
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="serialnumber" class="form-label">Serial number</label>
+                <input type="text" class="form-control" id="serialnumber" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid serial number is required.
+                </div>
+              </div>
+
+            <div class="col-sm-6">
+              <label for="colour" class="form-label">Colour</label>
+              <input type="text" class="form-control" id="colour" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid colour is required.
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="biketype" class="form-label">Bike type</label>
+                <input type="text" class="form-control" id="biketype" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid bike type name is required.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="bikesize" class="form-label">Bike size</label>
+                <input type="text" class="form-control" id="bikesize" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                   Valid bike size name is required.
+              </div>
+            </div>
+
+                          <div class="col-sm-7">
+                <label for="bikeregisterdate" class="form-label">Fecha de registro bicicleta </label>
+                <input type="text" class="form-control" id="bikeregisterdate" placeholder="1900-12-31" required>
+                <div class="invalid-feedback">
+                  Please enter bike register date.
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Colombia</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                
+                  <div class="col-md-4">
+                    <label for="Ciudad" class="form-label">City</label>
+                    <select class="form-select" id="ciudad" required>
+                      <option value="">Choose...</option>
+                      <option>Bogotà</option>
+                      <option>V/cencio</option>
+                      <option>Cali</option>
+                      <option>Bucaramanga</option>
+                      <option>Medellin</option>
+                      <option>Ibague</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                </div>
+            
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">He leido y acepto las politicas de uso de la aplicacion.</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">He leido y comprendido las politicas de uso y tratamiento de datos y Acepto los terminos y condiciones.</label>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submitreg">Finalizar registro</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021 Bicipool proyect</p>
+    <p class="mb-1"> Luis Baquero || Ximena Ducuara || Carlos Garcia || Marco Moreno    Universidad Sergio Arboleda MinTic 2021 Bicipool proyect</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    
+
+      <script src="form-validation.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

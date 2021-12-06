@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/bicipoolFunciones.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+     <!-- NAVBAR-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-light border border-warning navBar border-3 border-bottom border-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="150" width="150">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="color: rgb(233, 235, 149);"class="nav-link active" aria-current="page" href="indeuser.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: rgb(233, 235, 149);"class="nav-link" href="registerhere.html">Registrar</a>
+              </li>
+              <li style="color: rgb(23, 23, 24);"class="nav-item">
+                <a style="color: rgb(233, 235, 149);"class="nav-link" href="login.html">Inicia sesiòn</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: rgb(233, 235, 149);" class="nav-link" href=aboutus.html>Sobre Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color: rgb(233, 235, 149);"class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="favoritos.html">favoritos</a></li>
+                  <li><a class="dropdown-item" href="registerbike.html">registra tu bici</a></li>
+                  <li><a class="dropdown-item" href="reservation.html">reserva</a></li>
+                  <li><a class="dropdown-item" href="usuario.html">Tu menu</a></li>
+                  <li><a class="dropdown-item" href="contactus.html">contactanos</a></li>
+                  <li><a class="dropdown-item" href="reportes.html">Reportes</a></li>
+                </ul>
+              </li>
+            </ul>
+        </nav>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table" id="favorites-table">
+                <thead>
+                    <th>Serial</th>
+                    <th>brand</th>
+                    <th>size</th>
+                    <th>type</th>
+                    <th>color</th>
+                    <th>timeUsed</th>
+                    <th>status</th>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+            <div id="btnFormularioBike" class="text-center"><br>
+                <input id="btnCrear" type="submit" onclick="traerInformacionbikes()"
+                    value="Mostrar bicis disponibles" class="btn btn-dark">
+            <button class="btn btn-primary" id="add-favorite">Agregar favorito</button>
+        </div>
+    </div>
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2021 Bici Pool Proyect</p>
+                <p class="mb-1"> Luis Baquero | Ximena Ducuara |Carlos Garcia | Marco Moreno || Universidad Sergio Arboleda. MinTic.</p>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

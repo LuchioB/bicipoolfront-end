@@ -1,0 +1,252 @@
+
+
+
+.navBar{
+    background: url(../images/bg-04.png),  linear-gradient(-45deg, rgb(69, 133, 236) 0%, rgb(0, 1, 3) 66% ); 
+}
+.card-border{
+    background: url(../images/bg-04.png),  linear-gradient(45deg, rgb(30, 55, 84) 0%, rgb(245, 239, 239) 45% );
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+#separator1{        
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    
+     
+}
+#separator1 .content{
+    background: url(../images/bg-04.png), linear-gradient(180deg, rgb(30, 55, 84) 0%, rgb(50, 111, 184) 150% );
+    width: 150%;
+    height: 60px;
+    margin-left: -25%;    
+    border-bottom-left-radius: 110%;
+    border-bottom-right-radius: 110%;
+    
+    
+}
+
+#tablas{
+    
+    background: linear-gradient(0deg, rgb(63, 113, 221) 0%, rgb(0, 0, 0) 50%);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    margin-top: -10px;
+}
+
+#separator2{        
+    background-color : rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+     
+}
+#separator2 .content{    
+    background: url(../images/bg-04.png), linear-gradient(180deg, rgb(50,111, 184) 0%, rgb(0, 0, 0) 150% );
+    width: 150%;
+    height: 78px;
+    margin-left: -25%;
+    border-top-left-radius: 150%;
+    border-top-right-radius: 150%;
+}    
+
+
+
+.card-cat{
+    
+    background: url(../images/bg-04.png), rgb(30, 55, 84);
+    border: solid 2px black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all ease-out 0.2s; 
+}
+
+.background-total{
+    background: url(../images/bg-transparent.png);
+}
+
+#separator3{        
+    background-color : rgb(199, 197, 248);
+    width: 100%;
+    overflow: hidden;
+    position: center;
+    z-index: 2;
+     
+}
+#separator3 .content3{    
+    background: url(../images/bg-04.png), linear-gradient(180deg, rgb(50, 111, 184) 0%, rgb(0, 0, 0) 150% );
+    width: 150%;
+    height: 78px;
+    margin-left: -25%;
+    border-top-left-radius: 150%;
+    border-top-right-radius: 150%;
+} 
+
+.imagen-fondo{
+
+    background: url(../images/bg-blanco.jpg);
+
+}
+
+.fondo-login{
+    background: linear-gradient(45deg rgb(30, 55, 84) 0%, rgb(0, 0, 0) 150% );
+    border: solid 2px black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.container {
+    max-width: 960px;
+}
+
+.contact .info-box {
+    color: #444444;
+    padding: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .contact .info-box i.bx {
+    font-size: 24px;
+    color: #18d26e;
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+  }
+  .contact .info-box p {
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+  }
+  .contact .info-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+  }
+  .contact .info-box .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: 0.3s;
+  }
+  .contact .info-box .social-links a:hover {
+    color: #18d26e;
+  }
+  .contact .php-email-form {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .contact .php-email-form .error-message {
+    display: none;
+    background: rgba(255, 255, 255, 0.08);
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  .contact .php-email-form .sent-message {
+    display: none;
+    background: rgba(255, 255, 255, 0.08);
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .loading {
+    display: none;
+    background: rgba(255, 255, 255, 0.08);
+    text-align: center;
+    padding: 15px;
+  }
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: rgb(12, 12, 12);
+  }
+  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+  .contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  .contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  .contact .php-email-form input {
+    padding: 10px 15px;
+  }
+  .contact .php-email-form textarea {
+    padding: 12px 15px;
+  }
+  .contact .php-email-form button[type=submit] {
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .contact .php-email-form button[type=submit]:hover {
+    background: #15bb62;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+

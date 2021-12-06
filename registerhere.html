@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/bicipoolFunciones.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rgistro de usuarios nuevos</title>
+
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4"  img src="../images/logo.jpeg" alt="" width="100" height="100">
+      <h2>Forma de registro</h2>
+      <p class="lead">Aca vas a encontrar tu formulario de registro para que te puedas unir a esta magnifica comunidad. Porfavor no olvides diligenciar todos los campos.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+      
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Bicipool</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="secondName" class="form-label">Second name</label>
+                <input type="text" class="form-control" id="secondName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid second name is required.
+                </div>
+              </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="secondLastName" class="form-label">Second last name</label>
+                <input type="text" class="form-control" id="secondLastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid second last name is required.
+                </div>
+              </div>
+
+            <div class="col-12">
+              <label for="documento" class="form-label">Documento</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="iddocument" placeholder="iddocument" required>
+              <div class="invalid-feedback">
+                  Your document is required.    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <label for="tipo-documento" class="form-label">Tipo de documento</label>
+                <select class="form-select" id="tipo-documento" required>
+                  <option value="">Choose...</option>
+                  <option>Cedula ciudadania Colombiana</option>
+                  <option>Tarjeta de Identidad</option>
+                  <option>Documento extranjero</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid document.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="birthdate" class="form-label">Fecha de nacimiento</label>
+                <input type="text" class="form-control" id="birthdate" placeholder="1900-12-31" required>
+                <div class="invalid-feedback">
+                  Please enter your  birthdate.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label for="genero" class="form-label">Genero</label>
+                <select class="form-select" id="genero" required>
+                  <option value="">Choose...</option>
+                  <option>Hombre</option>
+                  <option>Mujer</option>
+                  <option>Otro</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid gender.
+                </div>
+            </div>
+
+                <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Colombia</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="Ciudad" class="form-label">City</label>
+                    <select class="form-select" id="ciudad" required>
+                      <option value="">Choose...</option>
+                      <option>Bogotà</option>
+                      <option>V/cencio</option>
+                      <option>Cali</option>
+                      <option>Bucaramanga</option>
+                      <option>Medellin</option>
+                      <option>Ibague</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+            
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your  address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 </label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-12">
+                <label for="email" class="form-label">Email </label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="facebook" class="form-label">Facebook</label>
+                <input type="facebook" class="form-control" id="facebook" placeholder="https://www.facebook.com/pg/youracount/posts/">
+                <div class="invalid-feedback">
+                  Please enter a valid facebook acount.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="instagram" class="form-label">instagram </label>
+                <input type="instagram" class="form-control" id="instagram" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid instagram acount.
+                </div>
+              </div>
+              <h6 class="my-0">Codigo de referencia</h6>
+            </div>
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="codigo de referencia">
+        </form>
+      </div>
+      <div class="col-md-3">
+        <label for="age" class="form-label">Edad</label>
+        <input type="text" class="form-control" id="edad" placeholder="Edad" required>
+        <div class="invalid-feedback">
+          Edad required
+        </div>
+      </div>
+    </div>
+    
+    </div>
+      <div class="col-md-7 col-lg-8">  
+
+        <div class="col-md-3">
+            <label for="bloodtype" class="form-label">tipo de sangre</label>
+            <input type="text" class="form-control" id="bloodtype" placeholder="bloodtype" required>
+            <div class="invalid-feedback">
+              bloodtype required
+            </div>
+          </div>               
+          </div>
+
+          <hr class="my-4">
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">He leido y acepto las politucas de uso de la aplicacion.</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">He leido y comprendido las politicas de uso y tratamiento de datos y Acepto los terminos y condiciones.</label>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submitreg">Continuar con el registro</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021 Bici Pool Proyect</p>
+            <p class="mb-1"> Luis Baquero | Ximena Ducuara |Carlos Garcia | Marco Moreno || Universidad Sergio Arboleda. MinTic.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    
+
+      <script src="form-validation.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
